@@ -7,12 +7,15 @@
     android:background="@color/background"
     android:orientation="vertical"
     tools:context=".Signup_form">
+
     <ImageView
-        android:layout_width="201dp"
-        android:layout_height="200dp"
-        android:src="@drawable/login"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_gravity="center"
-        android:background="@color/background"/>
+        android:layout_marginTop="10dp"
+        android:background="@color/background"
+        android:src="@drawable/login" />
+
     <ProgressBar
         android:id="@+id/progress"
         android:layout_width="wrap_content"
@@ -20,7 +23,6 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:visibility="gone"/>
-
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,6 +31,38 @@
         android:focusableInTouchMode="true">
         <EditText
             android:id="@+id/edit1"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="22sp"
+            android:hint="Full Name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:textColorHint="@color/colorAccent"
+        android:focusableInTouchMode="true">
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="22sp"
+            android:hint="User Name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:textColorHint="@color/colorAccent"
+        android:focusableInTouchMode="true">
+        <EditText
+            android:id="@+id/edit3"
             android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -45,7 +79,7 @@
         android:focusableInTouchMode="true"
         app:passwordToggleEnabled="true">
         <EditText
-            android:id="@+id/edit2"
+            android:id="@+id/edit4"
             android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,7 +96,7 @@
         android:focusableInTouchMode="true"
         app:passwordToggleEnabled="true">
         <EditText
-            android:id="@+id/edit3"
+            android:id="@+id/edit5"
             android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -71,10 +105,37 @@
             android:textSize="22sp"
             android:hint="Confirm Password"/>
     </com.google.android.material.textfield.TextInputLayout>
-  
+
+      <RadioGroup
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="10dp">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:layout_marginLeft="20sp"
+          android:text="Gender"/>
+          <RadioButton
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20sp"
+              android:text="Male"
+              android:textSize="20sp"/>
+          <RadioButton
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20sp"
+              android:text="Female"
+              android:textSize="20sp"/>
+      </RadioGroup>
+
+
+
     <Button
         android:id="@+id/register"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:layout_width="380dp"
         android:layout_height="wrap_content"

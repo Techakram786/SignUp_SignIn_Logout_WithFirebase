@@ -25,7 +25,7 @@ public class Login_form extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_form);
-        getSupportActionBar().setTitle("Login Form");
+//        getSupportActionBar().setTitle("Login Form");
         e1 = findViewById(R.id.edit1);
         e2 = findViewById(R.id.edit2);
         btn_login = findViewById(R.id.button);
@@ -57,8 +57,13 @@ public class Login_form extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
+                                    Intent i=new Intent(Login_form.this,MainActivity.class);
+                                    i.putExtra("Email",firebaseAuth.getCurrentUser().getEmail());
+                                    i.putExtra("Uid",firebaseAuth.getCurrentUser().getUid());
+                                   // i.putExtra("ImageUrl",firebaseAuth.getCurrentUser().getPhotoUrl());
+                                    startActivity(i);
                                     // Sign in success, update UI with the signed-in user's information
-                                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                                    //startActivity(new Intent(getApplicationContext(), MainActivity.class));
 
                                 } else {
                                     // If sign in fails, display a message to the user.
