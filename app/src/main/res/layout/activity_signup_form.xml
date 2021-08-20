@@ -45,15 +45,7 @@
         android:focusable="true"
         android:textColorHint="@color/colorAccent"
         android:focusableInTouchMode="true">
-        <EditText
-            android:id="@+id/edit2"
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-            android:textSize="22sp"
-            android:hint="User Name"/>
+
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -88,50 +80,6 @@
             android:textSize="22sp"
             android:hint="Password"/>
     </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:focusable="true"
-        android:textColorHint="@color/colorAccent"
-        android:focusableInTouchMode="true"
-        app:passwordToggleEnabled="true">
-        <EditText
-            android:id="@+id/edit5"
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:textSize="22sp"
-            android:hint="Confirm Password"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-      <RadioGroup
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:orientation="horizontal"
-          android:layout_marginTop="10dp">
-      <TextView
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:textSize="20sp"
-          android:layout_marginLeft="20sp"
-          android:text="Gender"/>
-          <RadioButton
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:layout_marginLeft="20sp"
-              android:text="Male"
-              android:textSize="20sp"/>
-          <RadioButton
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:layout_marginLeft="20sp"
-              android:text="Female"
-              android:textSize="20sp"/>
-      </RadioGroup>
-
-
 
     <Button
         android:id="@+id/register"
